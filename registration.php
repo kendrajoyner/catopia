@@ -3,7 +3,7 @@
 include 'header.php';
 ?>
 
-<body>
+
   <div id="page-wrapper">
     
     <!-- Header -->
@@ -22,10 +22,10 @@ include 'header.php';
 <?php
 
    
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-    $pass = $_POST['pass'];
-    $email= $_POST['email'];
+    $firstname = htmlspecialchars($_POST['firstname']);
+    $lastname = htmlspecialchars($_POST['lastname']);
+    $pass = htmlspecialchars($_POST['pass']);
+    $email= htmlspecialchars($_POST['email']);
       
     include'config.php'; 
     include 'functions/cat-functions.php';
@@ -59,8 +59,6 @@ include 'header.php';
         echo '<p><a href="signin.php" class="button-big">Return to login</a></p>';
         
   }
-    
-
 
 ?>
 

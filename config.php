@@ -4,9 +4,9 @@
 
 //if($server['HTTP_HOST'] == "catopia.club")
 //{
-   // define('SERVER', 'localhost');
-   // define('USER', 'kendraj0_cat');
-   // define('PW', 'cat123456');
+    //define('SERVER', 'localhost');
+    //define('USER', 'kendraj0_cat');
+    //define('PW', 'cat123456');
     //define('DB', 'kendraj0_cat');
 
 

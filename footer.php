@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="eng" class="no-js">
-
-<body>
-
   <!-- start footer Area -->
   <footer class="footer-area">
     <div class="container">
@@ -87,5 +82,4 @@
   <script src="js/mail-script.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>

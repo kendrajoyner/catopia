@@ -28,11 +28,10 @@ $connect = mysqli_connect(SERVER, USER, PW, DB);
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/nice-select.css">
-
-  <link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="bcss/css/main.css">
+  <link rel="stylesheet" href="bcss/css/main.css" />
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -85,7 +84,7 @@ $connect = mysqli_connect(SERVER, USER, PW, DB);
           
           <!--example admin-->
 
-          <?php
+      <?php
             
             // put the result in an array called row
            
@@ -101,13 +100,11 @@ $connect = mysqli_connect(SERVER, USER, PW, DB);
           }
           
      ?>   
-  
+
+      
           <a href="cats.php" class="primary-btn header-btn text-uppercase">Find a pet to adopt</a>
         </div>
       </div>
     </div>
   </section>
   <!-- End banner Area -->
-</body>
-
-</html>

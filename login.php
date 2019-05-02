@@ -17,7 +17,7 @@ include 'header.php';
 </head>
 
 
-<body>
+
   <div id="page-wrapper">
 
     <!-- Header -->
@@ -36,7 +36,7 @@ include 'header.php';
             <div class="6u 12u(mobile)">
 
 
-              <?php 
+<?php 
 
                           
 if(empty($_POST['email']) || empty($_POST['pass']) )
@@ -61,11 +61,8 @@ else
     $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
     $recaptcha = json_decode($recaptcha);
     
-   // var_dump($recaptcha);
-   // echo number_format($recaptcha->success,2);
-   // die;
     
-    if($recaptcha->score > 0) {
+    //if($recaptcha->score > 0) {
     // database code -- need to refactor
   
   
@@ -110,7 +107,7 @@ else
                     // success
                     $_SESSION['email'] = $row['email'];
                     $_SESSION['admin'] = $row['level'];
-                  $_SESSION['fname'] = $row['fname'];
+                    $_SESSION['fname'] = $row['fname'];
                  
                   if($row['level'] == 'a'){
                      header("location: admin.php");     
@@ -118,9 +115,7 @@ else
                   else{
                   header("location:index.php");
                 }
-                
-                  
-                  //header("location:index.php");
+  
                 }
 
                 else
@@ -130,10 +125,10 @@ else
             }
 
         }
-    } else {
+// else {
         //print_r($response);
-        echo '<p>CAPTCHA Failed</p>';
-    }  
+       // echo '<p>CAPTCHA Failed</p>';
+   // }  
 
     }
 
@@ -146,7 +141,7 @@ else
     </div>
 
 
-    <?php
+<?php
 
 include 'footer.php';
 ?>

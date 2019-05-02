@@ -37,7 +37,7 @@ include 'header.php';
       <form class="col-lg-9">
         <div class="form-group">
           <label for="first-name">First Name</label>
-          <input type="text" class="form-control" placeholder="First Name" required>
+          <input type="text" class="form-control" placeholder="First Name">
         </div>
         <div class="form-group">
           <label for="last-name">Last Name</label>
@@ -78,7 +78,7 @@ include 'header.php';
           </div>
           <div class="col-6 mb-30">
             <label for="email">Email Address</label>
-            <input type="email" class="form-control" placeholder="Email Address" required>
+            <input type="email" class="form-control" placeholder="Email Address">
           </div>
           <div class="col-6 mb-30">
             <label for="phone">Phone Number</label>

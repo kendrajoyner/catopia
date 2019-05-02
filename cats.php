@@ -36,7 +36,7 @@ include 'header.php';
 
   <div class="container">
 
-    <?php
+<?php
 
     // database code -- need to refactor
     include 'config.php';
@@ -54,7 +54,6 @@ include 'header.php';
 
   //  display the cats and images
   $i = 0;
-
   while($row = mysqli_fetch_assoc($result)){
   
   if ($i % 4 == 0 && $i != 0 ) {
